@@ -1,0 +1,22 @@
+baseURL: '/'
+languageCode: 'en-us'
+title: 'Web AppSec Engineer'
+theme: "m10c"
+
+params:
+  social:
+    - icon: "github"
+      name: "Meu Github"
+      url: "https://github.com/sgtux"
+    - icon: "linkedin"
+      name: "Meu LinkedIn"
+      url: "https://www.linkedin.com/in/sgtux/"
+  avatar: "/images/avatar.png"
+  description: "Encontre aqui conteúdo sobre Web Application Security Engineering."
+
+menu:
+  main:    
+    - name: 'About'
+      url: '/about/'
+    - name: 'Home'
+      url: '/'
