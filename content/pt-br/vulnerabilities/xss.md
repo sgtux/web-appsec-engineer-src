@@ -1,12 +1,17 @@
 ---
-title: "Cross-site scripting como previnir ?"
+title: "Cross-Site Scripting (XSS)"
 date: 2024-08-15T09:03:20-08:00
 draft: false
+description: O atalho usado por hackers para espalhar código malicioso no navegador.
 ---
 
 # Cross-Site Scripting (XSS)
 
-Também conhecido como XSS, é uma vulnerabilidade de segurança que permite que um atacante injete scripts maliciosos em páginas web visualizadas por outros usuários. Esses scripts geralmente são escritos em JavaScript e podem ser usados para roubar informações, manipular a interface do usuário ou realizar ações em nome do usuário sem o seu consentimento.
+Imagine que você está navegando em um site de compras, e alguém deixou um comentário sobre um produto. O comentário foi inserido em um campo de texto do próprio site. Porém sem você perceber algumas informações sensíveis que estavam armazenadas no seu navegador foram enviadas para um servidor desconhecido. Isso aconteceu devido ao comentário possuir códigos maliciosos que foram interpretados pelo navegador como um simples script JavaScript.
+
+Esse tipo de ataque é chamado de Cross-Site Scripting, ou XSS, e pode ser usado para roubar informações confidenciais, como tokens, senhas, cookies, ou até mesmo para alterar o comportamento do site, redirecionando os usuários para páginas falsas.
+
+Essa vulnerabilidade é possível porque o site não valida corretamente os dados inseridos pelo usuário. Então, em vez de apenas exibir o comentário como texto, o site acaba executando o código malicioso embutido ali. O XSS pode ser usado para muitas ações perigosas: roubo de dados pessoais, propagação de vírus e até ataques em larga escala, como phishing.
 
 ## Como Funciona?
 
@@ -29,9 +34,9 @@ Também conhecido como XSS, é uma vulnerabilidade de segurança que permite que
 2. Escapar Saída: Converter caracteres especiais em entidades HTML.
 3. Usar APIs Seguras: Evitar APIs inseguras como innerHTML e usar alternativas como textContent.
 
-**XSS é uma das vulnerabilidades mais comuns na web e está listado no [OWASP Top 10]().**
+**XSS é uma das vulnerabilidades mais comuns na web mencionado pela comunidade da [OWASP](https://owasp.org/www-community/attacks/xss/) e incluso na categoria de Injection (A03) do [OWASP TOP 10 (2021)](https://owasp.org/Top10/A03_2021-Injection/).** 
 
-## Abaixo estão exemplos de falhas e correções para Cross-Site Scripting (XSS) em Java e JavaScript.
+## Segue alguns exemplos de falhas e correções para Cross-Site Scripting (XSS) em diferentes linguagens.
 
 ### Exemplo de Falha de XSS Refletido em Java
 
@@ -52,7 +57,7 @@ public class XSSExample extends HttpServlet {
 // Se o atacante enviar name=<script>alert('XSS')</script>, o navegador executará o script malicioso.
 ```
 
-### Correção em Java
+### Possíveis correções
 
 1. Sanitizar Saída: Use bibliotecas como [OWASP Java Encoder]():
 

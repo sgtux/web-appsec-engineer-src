@@ -1,7 +1,8 @@
 ---
-title: "Como previnir SQL Injection em aplicações JAVA ?"
+title: "Cross-Site Request Forgery"
 date: 2024-02-15T09:03:20-08:00
 draft: true
+description: "Quando um site malicioso faz seu navegador agir contra você."
 ---
 
 # Cross-Site Request Forgery

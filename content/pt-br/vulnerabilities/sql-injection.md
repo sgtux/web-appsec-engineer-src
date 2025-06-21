@@ -1,10 +1,11 @@
 ---
-title: "SQL Injection como previnir ?"
+title: "SQL Injection"
 date: 2024-09-22T09:03:20-08:00
 draft: false
+description: "Brechas de segurança que abrem portas para ataques."
 ---
 
-# SQL Injection
+### SQL Injection
 SQL Injection é uma vulnerabilidade que ocorre quando um aplicativo permite que dados de entrada do usuário sejam incorporados em consultas SQL sem validação ou sanitização adequada. Isso permite que um atacante manipule a consulta SQL para acessar ou modificar informações não autorizadas no banco de dados.
 
 ### Como Funciona?

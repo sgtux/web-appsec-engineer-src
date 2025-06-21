@@ -1,22 +1,52 @@
 baseURL: '/'
 languageCode: 'en-us'
 title: 'Web AppSec Engineer'
-theme: "m10c"
+theme: 'm10c'
+defaultContentLanguage: pt-br
+defaultContentLanguageInSubdir: true
+
+languages:
+  pt-br:
+    languageName: "Português"
+    weight: 1
+    languageCode: "pt-BR"
+    contentDir: "content/pt-br"
+    params:
+      description: "Conteúdo especializado sobre práticas e técnicas na construção de sistemas mais seguros. Aprenda as melhores abordagens para proteger seus aplicativos e dados de ameaças cibernéticas!"
+      homeTitle: "Bem vindo!!"
+    menu:
+      main:    
+        - name: 'Sobre'
+          url: '/pt-br/about/'
+        - name: 'Home'
+          url: '/pt-br'
+  en-us:
+    languageName: "English"
+    weight: 2
+    languageCode: "en-US"
+    contentDir: "content/en-us"
+    params:
+      description: "Expert content on practices and techniques for building more secure systems. Learn the best approaches to protect your applications and data from cyber threats!"
+      homeTitle: "Welcome!"
+    menu:
+      main:
+        - name: 'About'
+          url: '/en-us/about/'
+        - name: 'Home'
+          url: '/en-us/'
 
 params:
   social:
+    - icon: "youtube"
+      name: "Youtube Channel"
+      url: "https://www.youtube.com/@SistemaInseguro"
     - icon: "github"
-      name: "Meu Github"
+      name: "Github"
       url: "https://github.com/sgtux"
     - icon: "linkedin"
-      name: "Meu LinkedIn"
+      name: "LinkedIn"
       url: "https://www.linkedin.com/in/sgtux/"
-  avatar: "/images/avatar.png"
-  description: "Encontre aqui conteúdo sobre Web Application Security Engineering."
+  avatar: "/images/avatar.webp"  
+  customCss: "css/style.css"
+  favicon: "/images/avatar.webp"
 
-menu:
-  main:    
-    - name: 'About'
-      url: '/about/'
-    - name: 'Home'
-      url: '/'
