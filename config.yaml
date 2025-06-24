@@ -1,7 +1,11 @@
 baseURL: '/'
 languageCode: 'en-us'
 title: 'Web AppSec Engineer'
-theme: 'm10c'
+theme:
+  - github.com/vaga/hugo-theme-m10c
+module:
+  imports:
+    - path: github.com/vaga/hugo-theme-m10c
 defaultContentLanguage: pt-br
 defaultContentLanguageInSubdir: true
 
