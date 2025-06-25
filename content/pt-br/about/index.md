@@ -8,7 +8,7 @@ Aqui, você encontrará conteúdos que vão desde as bases de segurança em dese
 
 ## Por que Web AppSec Engineer?
 
-Com a crescente sofisticação dos ataques cibernéticos, a segurança não é mais apenas um "extra" no desenvolvimento de aplicações – ela é essencial. O **Web AppSec Engineer** foi criado para ajudar profissionais e equipes a:
+Com a crescente sofisticação dos ataques cibernéticos, a segurança não é mais apenas um "extra" no desenvolvimento de aplicações, ela é essencial. O **Web AppSec Engineer** foi criado para ajudar profissionais e equipes a:
 
 - Entender as principais ameaças no desenvolvimento de software.
 - Implementar práticas de segurança de ponta a ponta.

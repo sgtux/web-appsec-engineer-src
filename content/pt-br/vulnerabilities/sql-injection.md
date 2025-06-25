@@ -2,7 +2,7 @@
 title: "SQL Injection"
 date: 2024-09-22T09:03:20-08:00
 draft: false
-description: "Brechas de segurança que abrem portas para ataques."
+description: "Quando um invasor insere comandos maliciosos no banco de dados por meio de entradas da aplicação."
 ---
 
 ### SQL Injection
